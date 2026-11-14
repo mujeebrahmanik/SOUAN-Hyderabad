@@ -131,8 +131,17 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-cream pt-28 lg:hidden"
+            className="fixed inset-0 z-50 bg-cream pt-24 lg:hidden"
           >
+            {/* Dedicated close button inside the panel */}
+            <button
+              onClick={() => setOpen(false)}
+              aria-label="Close menu"
+              className="absolute right-6 top-5 inline-flex h-10 w-10 items-center justify-center border border-cocoa-deep/20 text-cocoa-deep transition-colors hover:bg-cocoa-deep hover:text-ivory"
+            >
+              <X size={16} />
+            </button>
+
             <div className="flex h-full flex-col px-6 pb-10">
               <nav className="flex flex-col divide-y divide-cocoa-deep/10">
                 {navItems.map((item, i) => (

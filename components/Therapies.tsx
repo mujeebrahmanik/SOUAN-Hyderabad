@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { Phone } from "lucide-react";
 import Reveal from "./Reveal";
 import { popularTherapies } from "@/lib/treatments";
 import { PHONE_HREF } from "@/lib/navigation";
@@ -31,13 +31,13 @@ export default function Therapies() {
           </Reveal>
         </div>
 
-        {/* Clean 3-col grid: 1 / 2 / 3 */}
-        <div className="mt-20 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-20">
+        {/* 3-col grid with bordered editorial cards */}
+        <div className="mt-20 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {popularTherapies.map((t, i) => (
-            <Reveal key={t.slug} delay={(i % 3) * 0.06}>
-              <article className="group">
+            <Reveal key={t.slug} delay={(i % 3) * 0.06} className="h-full">
+              <article className="group flex h-full flex-col border border-cocoa-deep/10 bg-ivory/60 transition-colors duration-500 hover:border-cocoa-deep/25">
                 <a href={PHONE_HREF} className="block">
-                  <div className="relative aspect-[4/5] w-full overflow-hidden">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <Image
                       src={t.image}
                       alt={t.title}
@@ -48,46 +48,43 @@ export default function Therapies() {
                   </div>
                 </a>
 
-                <div className="mt-6 flex items-start justify-between gap-5">
-                  <div>
-                    <p className="index-num text-[10.5px] text-cocoa-deep/35">
-                      0{i + 1}
-                    </p>
-                    <h3 className="mt-2 font-display text-[1.25rem] font-normal leading-tight text-cocoa-deep">
-                      {t.title}
-                    </h3>
-                    <p className="mt-2 max-w-[34ch] text-[13px] leading-relaxed text-cocoa-deep/60">
-                      {t.description}
-                    </p>
+                <div className="flex flex-1 flex-col p-6 md:p-7">
+                  <p className="index-num text-[10.5px] text-cocoa-deep/35">
+                    0{i + 1}
+                  </p>
+                  <h3 className="mt-2 font-display text-[1.25rem] font-normal leading-tight text-cocoa-deep">
+                    {t.title}
+                  </h3>
+                  <p className="mt-3 text-[13px] leading-relaxed text-cocoa-deep/60">
+                    {t.description}
+                  </p>
+
+                  <div className="mt-auto pt-7">
+                    <div className="mb-5 h-px bg-cocoa-deep/10" />
+                    <a
+                      href={PHONE_HREF}
+                      aria-label={`Call for availability — ${t.title}`}
+                      className="btn-cta w-full"
+                    >
+                      <Phone size={13} /> Call for availability
+                    </a>
                   </div>
-                  <a
-                    href={PHONE_HREF}
-                    aria-label={`Enquire about ${t.title}`}
-                    className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center border border-cocoa-deep/15 text-cocoa-deep/60 transition-colors duration-500 hover:border-burgundy hover:bg-burgundy hover:text-ivory"
-                  >
-                    <ArrowUpRight size={14} />
-                  </a>
                 </div>
               </article>
             </Reveal>
           ))}
         </div>
 
-        {/* Single footer CTA row */}
+        {/* Quiet footer note */}
         <Reveal>
-          <div className="mt-24 flex flex-col items-start justify-between gap-6 border-t border-cocoa-deep/15 pt-10 md:flex-row md:items-center">
-            <p className="max-w-md text-[14px] leading-relaxed text-cocoa-deep/65">
+          <div className="mt-20 flex flex-col items-start justify-between gap-5 border-t border-cocoa-deep/15 pt-8 md:flex-row md:items-center">
+            <p className="max-w-md text-[13.5px] leading-relaxed text-cocoa-deep/60">
               Prefer to talk it through? Our front-desk team will help you
               choose the right ritual for how your body feels today.
             </p>
-            <div className="flex items-center gap-8">
-              <a href={PHONE_HREF} className="btn-cta">
-                Call for availability
-              </a>
-              <a href="#visit" className="btn-ghost">
-                Visit us
-              </a>
-            </div>
+            <a href="#visit" className="btn-ghost">
+              Visit us
+            </a>
           </div>
         </Reveal>
       </div>
