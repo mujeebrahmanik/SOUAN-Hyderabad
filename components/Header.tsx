@@ -50,7 +50,7 @@ export default function Header() {
       <div className="border-b border-ivory/10 bg-cocoa-deep text-ivory/90">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-6 py-[9px] md:px-10">
           <p className="truncate text-[10.5px] font-medium uppercase tracking-[0.32em]">
-            <span className="text-champagne">Instant Discount ·</span>{" "}
+            {/* <span className="text-champagne">Instant Discount ·</span>{" "} */}
             Same-Day Bookings Open
           </p>
           <div className="hidden items-center gap-5 text-[10.5px] font-medium uppercase tracking-[0.3em] md:flex">

@@ -63,7 +63,7 @@ export default function Benefits() {
           <figure className="relative">
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=1400&q=85"
+                src="/images/souanspa.webp"
                 alt="Guest resting after a treatment at Souan Luxury Spa"
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"

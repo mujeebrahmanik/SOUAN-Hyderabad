@@ -4,8 +4,7 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 import { PHONE_DISPLAY, PHONE_HREF, WHATSAPP_HREF } from "@/lib/navigation";
 
-const CTA_IMAGE =
-  "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=85";
+const CTA_IMAGE = "/images/oil.avif"
 
 export default function FinalCTA() {
   return (

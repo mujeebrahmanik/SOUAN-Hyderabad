@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, MessageCircle, Phone } from "lucide-react";
 import { PHONE_DISPLAY, PHONE_HREF, WHATSAPP_HREF } from "@/lib/navigation";
 
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=2400&q=85";
+
 
 export default function Hero() {
   return (
@@ -16,7 +15,7 @@ export default function Hero() {
       {/* Image + layered gradients — image breathes on the right */}
       <div
         className="absolute inset-0 -z-10 bg-cover bg-[center_38%] opacity-[0.6]"
-        style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+        style={{ backgroundImage: `url(/images/oil.avif)` }}
         aria-hidden
       />
       {/* Gentle flat overlay — just enough for text contrast */}
@@ -83,7 +82,7 @@ export default function Hero() {
             />
 
             {/* Right — the money-shot: big 30% */}
-            <div className="relative flex items-center gap-2.5 bg-champagne px-5 py-3.5 sm:px-6">
+            {/* <div className="relative flex items-center gap-2.5 bg-champagne px-5 py-3.5 sm:px-6">
               <span className="font-display text-[11px] font-medium uppercase tracking-[0.28em] text-cocoa-deep/70">
                 Flat
               </span>
@@ -95,7 +94,7 @@ export default function Hero() {
                   Off
                 </span>
               </span>
-            </div>
+            </div> */}
           </div>
 
           <div className="mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
@@ -116,7 +115,7 @@ export default function Hero() {
                 <span className="text-[9.5px] font-medium tracking-[0.3em] text-cocoa-deep/75">
                   Call for Instant Slot
                 </span>
-                <span className="mt-1 text-[13.5px] font-semibold tracking-[0.18em]">
+                <span className="mt-1.5 text-[13.5px] font-semibold tracking-[0.18em]">
                   {PHONE_DISPLAY}
                 </span>
               </span>
@@ -147,7 +146,7 @@ export default function Hero() {
                 <span className="text-[9.5px] tracking-[0.3em] text-white/70">
                   Chat on
                 </span>
-                <span className="mt-1 text-white">WhatsApp</span>
+                <span className="mt-1.5 text-white">WhatsApp</span>
               </span>
             </a>
           </div>
