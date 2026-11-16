@@ -19,7 +19,7 @@ export default function Benefits() {
         {/* Left — editorial list */}
         <div className="lg:col-span-7 lg:pr-4">
           <Reveal>
-            <p className="eyebrow">02 / Our promise</p>
+            <p className="eyebrow">02 / Our Promise</p>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-5 max-w-[16ch] font-display text-[clamp(2rem,4vw,3.4rem)] font-light leading-[1.05] tracking-[-0.02em]">
@@ -28,10 +28,9 @@ export default function Benefits() {
             </h2>
           </Reveal>
           <Reveal delay={0.14}>
-            <p className="mt-6 max-w-lg text-[15px] leading-[1.75] text-cocoa-deep/70">
-              Whether you're carrying chronic tension or just need a quiet hour
-              to yourself, Souan is where the city comes to properly unwind —
-              same-day friendly, never rushed.
+            <p className="mt-6 max-w-lg text-[16.5px] leading-[1.75] text-cocoa-deep">
+              Souan is where the city comes to properly unwind. Same-day
+              friendly. Never rushed.
             </p>
           </Reveal>
 
@@ -42,14 +41,14 @@ export default function Benefits() {
                   key={p.k}
                   className="group flex items-start gap-5 border-t border-cocoa-deep/10 pt-4"
                 >
-                  <span className="index-num mt-[2px] text-[11px] text-cocoa-deep/35">
+                  <span className="index-num mt-[2px] text-[11.5px] text-cocoa-deep/75">
                     0{i + 1}
                   </span>
                   <div>
-                    <dt className="font-display text-[15px] font-normal text-cocoa-deep">
+                    <dt className="font-display text-[15.5px] font-medium text-cocoa-deep">
                       {p.k}
                     </dt>
-                    <dd className="mt-1 text-[13px] leading-relaxed text-cocoa-deep/60">
+                    <dd className="mt-1 text-[14px] leading-[1.6] text-cocoa-deep/90">
                       {p.d}
                     </dd>
                   </div>
@@ -71,8 +70,8 @@ export default function Benefits() {
                 className="object-cover object-[center_30%]"
               />
             </div>
-            <figcaption className="mt-5 flex items-baseline justify-between gap-6 text-[10.5px] uppercase tracking-[0.3em] text-cocoa-deep/55">
-              <span>A quiet afternoon · Sun City suite</span>
+            <figcaption className="mt-5 flex items-baseline justify-between gap-6 text-[11.5px] uppercase tracking-[0.3em] text-cocoa-deep/90">
+              <span>A quiet afternoon · Sun City Suite</span>
               <span className="serif lowercase tracking-normal text-burgundy">
                 no. 03
               </span>

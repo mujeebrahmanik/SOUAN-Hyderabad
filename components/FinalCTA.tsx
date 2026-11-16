@@ -42,22 +42,22 @@ export default function FinalCTA() {
               </Reveal>
 
               <Reveal delay={0.16}>
-                <p className="mt-6 max-w-md text-[13.5px] leading-[1.75] text-cocoa-deep/60">
+                <p className="mt-6 max-w-md text-[15.5px] leading-[1.75] text-cocoa-deep">
                   Same-day appointments usually available. Call{" "}
                   <a
                     href={PHONE_HREF}
-                    className="text-cocoa-deep underline-offset-4 hover:text-burgundy hover:underline"
+                    className="font-semibold text-burgundy underline-offset-4 hover:underline"
                   >
                     {PHONE_DISPLAY}
-                  </a>{" "}
-                  · Open daily, 9 AM — 10 PM.
+                  </a>
+                  . Open daily, 9 AM – 10 PM.
                 </p>
               </Reveal>
 
               <Reveal delay={0.22}>
                 <div className="mt-10 flex flex-wrap items-center gap-4">
                   <a href={PHONE_HREF} className="btn-cta">
-                    Call to reserve
+                    Call to Reserve
                   </a>
                   <a
                     href={WHATSAPP_HREF}

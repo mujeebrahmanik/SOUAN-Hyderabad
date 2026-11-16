@@ -17,13 +17,13 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Souan Luxury Spa — Sun City, Hyderabad",
+  title: "Best Luxury Spa in Suncity, Hyderabad | Up to 30% Off | Souan",
   description:
-    "An oasis of tranquillity in Sun City, Hyderabad. Souan Luxury Spa offers a curated selection of opulent treatments that blend ancient traditions with contemporary techniques.",
+    "Book a full-body massage, deep tissue or aromatherapy session at Souan Luxury Spa, Suncity. Up to 30% off. Same-day slots. Call 080194 74555.",
   openGraph: {
-    title: "Souan Luxury Spa — Sun City, Hyderabad",
+    title: "Best Luxury Spa in Suncity, Hyderabad | Up to 30% Off | Souan",
     description:
-      "Tranquility. Tradition. Transformation. Discover a sanctuary of wellness at Souan Luxury Spa, Sun City.",
+      "Book a full-body massage, deep tissue or aromatherapy session at Souan Luxury Spa, Suncity. Up to 30% off. Same-day slots. Call 080194 74555.",
     type: "website",
   },
 };

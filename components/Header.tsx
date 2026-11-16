@@ -13,13 +13,13 @@ import {
 function Wordmark({ tone }: { tone: "light" | "dark" }) {
   const text = tone === "light" ? "text-ivory" : "text-cocoa-deep";
   const sub =
-    tone === "light" ? "text-ivory/55" : "text-cocoa-deep/45";
+    tone === "light" ? "text-ivory/80" : "text-cocoa-deep/70";
   return (
     <a href="#home" className="inline-flex flex-col leading-none">
-      <span className={`font-display text-[17px] font-light tracking-[0.42em] ${text}`}>
+      <span className={`font-display text-[17px] font-medium tracking-[0.42em] ${text}`}>
         SOUAN
       </span>
-      <span className={`mt-1.5 text-[8.5px] uppercase tracking-[0.36em] ${sub}`}>
+      <span className={`mt-1.5 text-[9px] font-medium uppercase tracking-[0.36em] ${sub}`}>
         Luxury Spa — Sun City
       </span>
     </a>
@@ -47,13 +47,13 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       {/* Thin utility strip — single tone, no coloured chips */}
-      <div className="border-b border-ivory/10 bg-cocoa-deep text-ivory/70">
+      <div className="border-b border-ivory/10 bg-cocoa-deep text-ivory/90">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-6 py-[9px] md:px-10">
-          <p className="truncate text-[10px] uppercase tracking-[0.32em]">
-            <span className="text-champagne/90">Instant discount ·</span>{" "}
-            Same-day bookings open
+          <p className="truncate text-[10.5px] font-medium uppercase tracking-[0.32em]">
+            <span className="text-champagne">Instant Discount ·</span>{" "}
+            Same-Day Bookings Open
           </p>
-          <div className="hidden items-center gap-5 text-[10px] uppercase tracking-[0.3em] md:flex">
+          <div className="hidden items-center gap-5 text-[10.5px] font-medium uppercase tracking-[0.3em] md:flex">
             <a
               href={WHATSAPP_HREF}
               target="_blank"
@@ -90,13 +90,13 @@ export default function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className={`font-display text-[11.5px] uppercase tracking-[0.26em] transition-colors duration-300 ${
+                className={`font-display text-[11.5px] font-medium uppercase tracking-[0.26em] transition-colors duration-300 ${
                   scrolled
-                    ? "text-cocoa-deep/75 hover:text-burgundy"
-                    : "text-ivory/80 hover:text-champagne"
+                    ? "text-cocoa-deep hover:text-burgundy"
+                    : "text-ivory hover:text-champagne"
                 }`}
               >
-                <span className="mr-2 text-[9px] opacity-55">
+                <span className="mr-2 text-[9.5px] font-normal opacity-70">
                   0{i + 1}
                 </span>
                 {item.label}

@@ -14,19 +14,20 @@ export default function Therapies() {
         <div className="grid grid-cols-1 items-end gap-10 md:grid-cols-12">
           <div className="md:col-span-7">
             <Reveal>
-              <p className="eyebrow">03 / Popular therapies</p>
+              <p className="eyebrow">03 / Popular Therapies</p>
             </Reveal>
             <Reveal delay={0.08}>
               <h2 className="mt-5 max-w-[18ch] font-display text-[clamp(2rem,4.2vw,3.4rem)] font-light leading-[1.05] tracking-[-0.02em]">
-                Hyderabad's full range of massage therapies —{" "}
+                Hyderabad's full range of massage therapies,{" "}
                 <span className="serif text-burgundy">under one roof.</span>
               </h2>
             </Reveal>
           </div>
           <Reveal delay={0.14} className="md:col-span-4 md:col-start-9">
-            <p className="text-[14px] leading-relaxed text-cocoa-deep/65">
-              Six of our most-booked rituals. Every treatment is available at up
-              to 30% off, with same-day slots open across the week.
+            <p className="text-[15.5px] leading-[1.7] text-cocoa-deep">
+              Every treatment is available at{" "}
+              <span className="font-semibold text-burgundy">up to 30% off</span>
+              , with same-day slots open.
             </p>
           </Reveal>
         </div>
@@ -49,13 +50,13 @@ export default function Therapies() {
                 </a>
 
                 <div className="flex flex-1 flex-col p-6 md:p-7">
-                  <p className="index-num text-[10.5px] text-cocoa-deep/35">
+                  <p className="index-num text-[11px] text-cocoa-deep/75">
                     0{i + 1}
                   </p>
-                  <h3 className="mt-2 font-display text-[1.25rem] font-normal leading-tight text-cocoa-deep">
+                  <h3 className="mt-2 font-display text-[1.3rem] font-medium leading-tight text-cocoa-deep">
                     {t.title}
                   </h3>
-                  <p className="mt-3 text-[13px] leading-relaxed text-cocoa-deep/60">
+                  <p className="mt-3 text-[14px] leading-[1.65] text-cocoa-deep/95">
                     {t.description}
                   </p>
 
@@ -66,7 +67,7 @@ export default function Therapies() {
                       aria-label={`Call for availability — ${t.title}`}
                       className="btn-cta w-full"
                     >
-                      <Phone size={13} /> Call for availability
+                      <Phone size={13} /> Call for Availability
                     </a>
                   </div>
                 </div>
@@ -78,12 +79,12 @@ export default function Therapies() {
         {/* Quiet footer note */}
         <Reveal>
           <div className="mt-20 flex flex-col items-start justify-between gap-5 border-t border-cocoa-deep/15 pt-8 md:flex-row md:items-center">
-            <p className="max-w-md text-[13.5px] leading-relaxed text-cocoa-deep/60">
+            <p className="max-w-md text-[15px] leading-[1.7] text-cocoa-deep">
               Prefer to talk it through? Our front-desk team will help you
               choose the right ritual for how your body feels today.
             </p>
             <a href="#visit" className="btn-ghost">
-              Visit us
+              Visit Us
             </a>
           </div>
         </Reveal>
